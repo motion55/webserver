@@ -8,7 +8,7 @@ extern "C" {
 
 	void DoLED1(void)
 	{
-		Serial.println(F("LED1"));
+		//Serial.println(F("LED1"));
 		if (bLED1)
 		{
 			bLED1 = false;
@@ -23,17 +23,17 @@ extern "C" {
 
 	void DoLED2(void)
 	{
-		Serial.println(F("LED2"));
+		//Serial.println(F("LED2"));
 	}
 
 	void DoLED3(void)
 	{
-		Serial.println(F("LED3"));
+		//Serial.println(F("LED3"));
 	}
 
 	void DoLED4(void)
 	{
-		Serial.println(F("LED4"));
+		//Serial.println(F("LED4"));
 	}
 
 	int ADC_GetConversionValue()
@@ -62,12 +62,12 @@ void setup() {
     delay(200);
   }
   Serial.println(F("WiFi Connected!"));
+  pinMode(LED_BUILTIN, OUTPUT);
   httpd_init();
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
 }
 
 
